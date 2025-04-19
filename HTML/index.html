@@ -1,21 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum Online</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThreadNest</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <div>Forum Online</div>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="profile.html">Profile</a></li>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-section">
+                <img src="../img/user-list-bold.png" alt="Logo" class="logo-icon" />
+                <div class="logo-section-text">
+                    <h2>ThreadNest</h2>
+                    <p>Support Forum</p>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <img src="../img/chats-bold.png" alt="All Forums Icon" class="icon">
+                        All Forums
+                    </li>
+                    <li>
+                        <img src="../img/file-plus-bold.png" alt="New Posts Icon" class="icon">
+                        New Posts
+                    </li>
+                    <li>
+                        <img src="../img/apple-podcasts-logo-bold.png" alt="Podcast Icon" class="icon">
+                        Podcast
+                    </li>
+                    <li>
+                        <img src="../img/user-circle-plus-bold.png" alt="Following Icon" class="icon">
+                        Following
+                    </li>
+                    <li>
+                        <img src="../img/chat-circle-text-bold.png" alt="New Threads Icon" class="icon">
+                        New Threads
+                    </li>
+                    <li>
+                        <img src="../img/user-bold.png" alt="About us icon" class="icon">
+                        About us
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="tags-section">
+                <h4>Popular Tags</h4>
+                <ul>
+                    <li>
+                        <img src="../img/binoculars-bold.png" alt="Research Icon" class="icon" />
+                        #research <span>6,258 posts</span>
+                    </li>
+                    <li>
+                        <img src="../img/apple-logo-bold.png" alt="Apple Icon" class="icon">
+                        #apple <span>6,759 posts</span>
+                    </li>
+                    <li>
+                        <img src="../img/atom-bold.png" alt="Science Icon" class="icon">
+                        #science <span>12,846 posts</span>
+                    </li>
+                    <li>
+                        <img src="../img/barbell-bold.png" alt="Sports Icon" class="icon">
+                        #sports <span>9,258 posts</span>
+                    </li>
+                    <li>
+                        <img src="../img/bank-bold.png" alt="Politics Icon" class="icon">
+                        #politics <span>3,258 posts</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-content">
+            <div class="top-bar">
+                <h1>Explore Forums</h1>
+                <button class="new-thread-btn">+ Thread</button>
+            </div>
+
+            <!-- Forum Sections -->
+            <section class="forum-section collapsed">
+                <div class="section-header">
+                    <h2>Q&As</h2>
+                    <button class="expand-btn">+</button>
+                </div>
+            </section>
+            
+            <section class="forum-section collapsed">
+                <div class="section-header">
+                    <h2>Internet Culture</h2>
+                    <button class="expand-btn">+</button>
+                </div>
+            </section>
+            
+            <section class="forum-section collapsed">
+                <div class="section-header">
+                    <h2>Technology</h2>
+                    <button class="expand-btn">+</button>
+                </div>
+            </section>
+
+            <!-- Collapsible Section: Research -->
+            <section class="forum-section collapsed">
+                <div class="section-header">
+                    <h2>Politics</h2>
+                    <button class="expand-btn">+</button>
+                </div>
+            </section>
+
+            <!-- Collapsible Section: Treatments -->
+            <section class="forum-section collapsed">
+                <div class="section-header">
+                    <h2>Sports</h2>
+                    <button class="expand-btn">+</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Panel -->
+        <aside class="right-panel">
+            <div class="promo-box">
+                <h3>ThreadNest</h3>
+                <p>Help us support people in Ukraine!</p>
+                <button class="survey-btn">Donate</button>
+            </div>
+
+            <div class="tabs">
+                <button class="tab active">New Posts</button>
+                <button class="tab">New Threads</button>
+            </div>
+
+            <ul class="recent-posts">
+                <li>Apple iPhone 17 design leaks</li>
+                <li>When will GTA VI be released?</li>
+                <li>Messi undecided if he will play at 2026 World Cup</li>
+                <li>Fires in the Amazon forest may melt sea ice in Antarctica</li>
+                <li>How has the current economic crisis affected your access to healthcare or treatment options?</li>
+                <li>How do you take care of your mental health while living with a chronic condition?</li>
             </ul>
-        </nav>
-    </header>
+        </aside>
+    </div>
 </body>
+
 </html>
