@@ -1,4 +1,4 @@
-// Expand/collapse behavior
+// Expand/collapse 
 document.querySelectorAll('.expand-btn').forEach(btn => {
 btn.addEventListener('click', () => {
     const section = btn.closest('.forum-section');
@@ -10,7 +10,6 @@ btn.addEventListener('click', () => {
     const newContent = document.createElement('div');
     newContent.className = 'card-list';
 
-      // Insert different cards based on section title
     if (title === 'Q&As') {
         newContent.innerHTML = `
         <div class="thread-card">Q&As</div>
@@ -63,7 +62,6 @@ tab.addEventListener('click', () => {
     tabs.forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
 
-    // Simple dummy switch
     if (tab.textContent.includes('Threads')) {
     postList.innerHTML = `
         <li>Apple iPhone 17 design leaks</li>
