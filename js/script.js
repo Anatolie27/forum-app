@@ -24,8 +24,8 @@ btn.addEventListener('click', () => {
         `;
     } else if (title === 'Technology') {
         newContent.innerHTML = `
-        <div class="thread-card">Programming</div>
-        <div class="thread-card">Artificial Intelligence</div>
+        <a href="programmingPage.html" class="thread-card">Programming</a>
+        <a href="artificialIntelligencePage.html" class="thread-card">Artificial Intelligence</a>
         `;
     } else if (title === 'Politics') {
         newContent.innerHTML = `
