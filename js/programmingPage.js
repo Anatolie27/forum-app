@@ -1,6 +1,6 @@
 document.querySelectorAll('.read-more').forEach(button => {
 button.addEventListener('click', () => {
-    alert('Full article functionality coming soon!');
+    alert('Full article coming soon!');
 });
 });
 document.addEventListener("DOMContentLoaded", () => {

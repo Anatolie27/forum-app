@@ -214,7 +214,7 @@ header p {
     background-color: #2a2c33;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
