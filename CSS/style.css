@@ -70,7 +70,20 @@ body {
     margin: 0;
 }
 
-.menu ul,
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
 .tags-section ul {
     list-style: none;
     display: flex;
@@ -79,14 +92,20 @@ body {
 }
 
 .menu li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #ccc;
     cursor: pointer;
-    padding: 8px 12px;
     border-radius: 10px;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s;
 }
 
 .menu li:hover {
     background-color: #1c1e24;
+    color: #00ff88;
 }
 
 .tags-section h4 {
@@ -101,6 +120,14 @@ body {
     padding: 6px 10px;
     border-radius: 8px;
     background-color: #1a1c21;
+}
+
+.menu li .icon{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    filter: brightness(0.9) saturate(0);
+    flex-shrink: 0;
 }
 
 /* Main Content */
