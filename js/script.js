@@ -12,15 +12,15 @@ btn.addEventListener('click', () => {
 
     if (title === 'Q&As') {
         newContent.innerHTML = `
-        <div class="thread-card">Q&As</div>
-        <div class="thread-card">Stories</div>
-        <div class="thread-card">Confessions</div>
-        <div class="thread-card">Creepy</div>
+        <a href="QandSpage.html" class="thread-card">Q&As</a>
+        <a href="storiesPage.html" class="thread-card">Stories</a>
+        <a href="confessionsPage.html" class="thread-card">Confessions</a>
+        <a href="creepyPage.html" class="thread-card">Creepy</a>
         `;
     } else if (title === 'Internet Culture') {
         newContent.innerHTML = `
-        <div class="thread-card">Memes</div>
-        <div class="thread-card">Funny</div>
+        <a href="memesPage.html" class="thread-card">Memes</a>
+        <a href="funnyPage.html" class="thread-card">Funny</a>
         `;
     } else if (title === 'Technology') {
         newContent.innerHTML = `
@@ -29,18 +29,13 @@ btn.addEventListener('click', () => {
         `;
     } else if (title === 'Politics') {
         newContent.innerHTML = `
-        <div class="thread-card">Domestic Policy</div>
-        <div class="thread-card">Foreign policy</div>
+        <a href="domesticPolicyPage.html" class="thread-card">Domestic Policy</a>
+        <a href="foreignPolicyPage.html" class="thread-card">Foreign policy</a>
         `;
     } else if (title === 'Sports') {
         newContent.innerHTML = `
-        <div class="thread-card">Football</div>
-        <div class="thread-card">Formula 1</div>
-        `;
-    } else {
-        newContent.innerHTML = `
-        <div class="thread-card">Placeholder Topic</div>
-        <div class="thread-card">Another Topic</div>
+        <a href="footballPage.html" class="thread-card">Football</a>
+        <a href="formula1Page.html" class="thread-card">Formula 1</a>
         `;
     }
 
@@ -53,27 +48,34 @@ btn.addEventListener('click', () => {
 });
 });
 
-// Tab switching
-const tabs = document.querySelectorAll('.tab');
-const postList = document.querySelector('.recent-posts');
+// Tab switching 
+document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".tab");
+    const postList = document.querySelector(".recent-posts");
 
-tabs.forEach(tab => {
-tab.addEventListener('click', () => {
-    tabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
+    const posts = {
+        "New Posts": [
+            "Apple iPhone 17 design leaks",
+            "Messi undecided if he will play at 2026 World Cup",
+            "Fires in the Amazon forest may melt sea ice in Antarctica"
+        ],
+        "New Threads": [
+            "When will GTA VI be released?",
+            "How has the current economic crisis affected your access to healthcare or treatment options?",
+            "How do you take care of your mental health while living with a chronic condition?"
+        ]
+    };
 
-    if (tab.textContent.includes('Threads')) {
-    postList.innerHTML = `
-        <li>Apple iPhone 17 design leaks</li>
-        <li>Messi undecided if he will play at 2026 World Cup</li>
-        <li>Fires in the Amazon forest may melt sea ice in Antarctica</li>
-    `;
-    } else {
-    postList.innerHTML = `
-        <li>When will GTA VI be released?</li>
-        <li>How has the current economic crisis affected your access to healthcare or treatment options?</li>
-        <li>How do you take care of your mental health while living with a chronic condition?</li>
-    `;
-    }
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            const selected = tab.textContent.trim();
+            postList.innerHTML = posts[selected]
+                .map(item => `<li>${item}</li>`)
+                .join("");
+        });
+    });
 });
-});
+
