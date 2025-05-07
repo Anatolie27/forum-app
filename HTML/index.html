@@ -10,136 +10,127 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo-section">
-                <img src="../img/user-list-bold.png" alt="Logo" class="logo-icon" />
-                <div class="logo-section-text">
-                    <h2>ThreadNest</h2>
-                    <p>Support Forum</p>
-                </div>
-            </div>
-
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <img src="../img/chats-bold.png" alt="All Forums Icon" class="icon">
-                        All Forums
-                    </li>
-                    <li class="menu-item">
-                        <img src="../img/file-plus-bold.png" alt="New Posts Icon" class="icon">
-                        New Posts
-                    </li>
-                    <li class="menu-item">
-                        <img src="../img/apple-podcasts-logo-bold.png" alt="Podcast Icon" class="icon">
-                        Podcast
-                    </li>
-                    <li class="menu-item">
-                        <img src="../img/user-circle-plus-bold.png" alt="Following Icon" class="icon">
-                        Following
-                    </li>
-                    <li class="menu-item">
-                        <img src="../img/chat-circle-text-bold.png" alt="New Threads Icon" class="icon">
-                        New Threads
-                    </li>
-                    <li class="menu-item">
-                        <img src="../img/user-bold.png" alt="About us icon" class="icon">
-                        About us
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="tags-section">
-                <h4>Popular Tags</h4>
-                <ul>
-                    <li>
-                        <img src="../img/binoculars-bold.png" alt="Research Icon" class="icon" />
-                        #research <span>6,258 posts</span>
-                    </li>
-                    <li>
-                        <img src="../img/apple-logo-bold.png" alt="Apple Icon" class="icon">
-                        #apple <span>6,759 posts</span>
-                    </li>
-                    <li>
-                        <img src="../img/atom-bold.png" alt="Science Icon" class="icon">
-                        #science <span>12,846 posts</span>
-                    </li>
-                    <li>
-                        <img src="../img/barbell-bold.png" alt="Sports Icon" class="icon">
-                        #sports <span>9,258 posts</span>
-                    </li>
-                    <li>
-                        <img src="../img/bank-bold.png" alt="Politics Icon" class="icon">
-                        #politics <span>3,258 posts</span>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-
+    <div class="page-wrapper">
         <!-- Main content -->
-        <main class="main-content">
-            <div class="top-bar">
-                <h1>Explore Forums</h1>
-                <button class="new-thread-btn">+ Thread</button>
+        <div class="container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="logo-section">
+                    <img src="../img/user-list-bold.png" alt="Logo" class="logo-icon" />
+                    <div class="logo-section-text">
+                        <h2>ThreadNest</h2>
+                        <p>Support Forum</p>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><img src="../img/chats-bold.png" class="icon">All Forums</li>
+                        <li class="menu-item"><img src="../img/file-plus-bold.png" class="icon">New Posts</li>
+                        <li class="menu-item"><img src="../img/apple-podcasts-logo-bold.png" class="icon">Podcast</li>
+                        <li class="menu-item"><img src="../img/user-circle-plus-bold.png" class="icon">Following</li>
+                        <li class="menu-item"><img src="../img/chat-circle-text-bold.png" class="icon">New Threads</li>
+                        <li class="menu-item"><img src="../img/user-bold.png" class="icon">About us</li>
+                    </ul>
+                </nav>
+                <div class="tags-section">
+                    <h4>Popular Tags</h4>
+                    <ul>
+                        <li><img src="../img/binoculars-bold.png" class="icon" />#research <span>6,258 posts</span></li>
+                        <li><img src="../img/apple-logo-bold.png" class="icon">#apple <span>6,759 posts</span></li>
+                        <li><img src="../img/atom-bold.png" class="icon">#science <span>12,846 posts</span></li>
+                        <li><img src="../img/barbell-bold.png" class="icon">#sports <span>9,258 posts</span></li>
+                        <li><img src="../img/bank-bold.png" class="icon">#politics <span>3,258 posts</span></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main content -->
+            <main class="main-content">
+                <div class="top-bar">
+                    <h1>Explore Forums</h1>
+                    <button class="new-thread-btn">+ Thread</button>
+                </div>
+                <section class="forum-section collapsed">
+                    <div class="section-header">
+                        <h2>Q&As</h2><button class="expand-btn">+</button>
+                    </div>
+                </section>
+                <section class="forum-section collapsed">
+                    <div class="section-header">
+                        <h2>Internet Culture</h2><button class="expand-btn">+</button>
+                    </div>
+                </section>
+                <section class="forum-section collapsed">
+                    <div class="section-header">
+                        <h2>Technology</h2><button class="expand-btn">+</button>
+                    </div>
+                </section>
+                <section class="forum-section collapsed">
+                    <div class="section-header">
+                        <h2>Politics</h2><button class="expand-btn">+</button>
+                    </div>
+                </section>
+                <section class="forum-section collapsed">
+                    <div class="section-header">
+                        <h2>Sports</h2><button class="expand-btn">+</button>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Right Panel -->
+            <aside class="right-panel">
+                <div class="promo-box">
+                    <h3>ThreadNest</h3>
+                    <p>Help us support people in Ukraine!</p>
+                    <button class="survey-btn">Donate</button>
+                </div>
+                <div class="tabs">
+                    <button class="tab active">New Posts</button>
+                    <button class="tab">New Threads</button>
+                </div>
+                <ul class="recent-posts">
+                    <li>Apple iPhone 17 design leaks</li>
+                    <li>Messi undecided if he will play at 2026 World Cup</li>
+                    <li>Fires in the Amazon forest may melt sea ice in Antarctica</li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h3>About ThreadNest</h3>
+                        <p>We connect communities with forums that foster meaningful discussions and share important
+                            stories.</p>
+                    </div>
+                    <div class="footer-section links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">New Threads</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section contact">
+                        <h3>Contact & Location</h3>
+                        <p>Email: support@threadnest.com</p>
+                        <p>Phone: +373 6066 1508</p>
+                        <p>Visit us at:</p>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.354195319723!2d-122.08560828420767!3d37.422065979825225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0a6a2a9d0d3%3A0x9b6fb0f6cfedf9f4!2sGoogleplex!5e0!3m2!1sen!2sus!4v1618322742193!5m2!1sen!2sus"
+                                allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 ThreadNest. All rights reserved.</p>
+                </div>
             </div>
-
-            <!-- Forum Sections -->
-            <section class="forum-section collapsed">
-                <div class="section-header">
-                    <h2>Q&As</h2>
-                    <button class="expand-btn">+</button>
-                </div>
-            </section>
-            
-            <section class="forum-section collapsed">
-                <div class="section-header">
-                    <h2>Internet Culture</h2>
-                    <button class="expand-btn">+</button>
-                </div>
-            </section>
-            
-            <section class="forum-section collapsed">
-                <div class="section-header">
-                    <h2>Technology</h2>
-                    <button class="expand-btn">+</button>
-                </div>
-            </section>
-
-            <section class="forum-section collapsed">
-                <div class="section-header">
-                    <h2>Politics</h2>
-                    <button class="expand-btn">+</button>
-                </div>
-            </section>
-
-            <section class="forum-section collapsed">
-                <div class="section-header">
-                    <h2>Sports</h2>
-                    <button class="expand-btn">+</button>
-                </div>
-            </section>
-        </main>
-
-        <!-- Right Panel -->
-        <aside class="right-panel">
-            <div class="promo-box">
-                <h3>ThreadNest</h3>
-                <p>Help us support people in Ukraine!</p>
-                <button class="survey-btn">Donate</button>
-            </div>
-
-            <div class="tabs">
-                <button class="tab active">New Posts</button>
-                <button class="tab">New Threads</button>
-            </div>
-            
-            <ul class="recent-posts">
-                <li>Apple iPhone 17 design leaks</li>
-                <li>Messi undecided if he will play at 2026 World Cup</li>
-                <li>Fires in the Amazon forest may melt sea ice in Antarctica</li>
-            </ul>
-        </aside>
+        </footer>
     </div>
 </body>
 
